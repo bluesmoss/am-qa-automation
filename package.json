@@ -4,7 +4,8 @@
   "description": "Challenge 1 - QA Automation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test-all-chrome": "testcafe chrome ./page_model/tests",
+    "test-check-browsers": "testcafe ---list-browsers"
   },
   "repository": {
     "type": "git",
