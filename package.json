@@ -1,0 +1,26 @@
+{
+  "name": "am-qa-automation",
+  "version": "1.0.0",
+  "description": "Challenge 1 - QA Automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluesmoss/am-qa-automation.git"
+  },
+  "keywords": [
+    "testcafe",
+    "automation"
+  ],
+  "author": "@bluesmoss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bluesmoss/am-qa-automation/issues"
+  },
+  "homepage": "https://github.com/bluesmoss/am-qa-automation#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
