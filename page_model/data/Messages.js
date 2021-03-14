@@ -7,7 +7,8 @@ export const FEATURE = {
 
 export const SCENARIO = {
     L0GIN_VALID_USER: '1. Login with a valid user',
-    LOGIN_INVALID: '2. Login with an invalid user'
+    LOGIN_INVALID: '2. Login with an invalid user',
+    LOGOUT_VALID: '3. Logout from products page'
 }
 
 export const ERROR = {
