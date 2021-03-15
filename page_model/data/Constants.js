@@ -22,3 +22,9 @@ export const PRODUCT = {
     TOTAL_MULTIPLE_ITEMS: 6,
     EMPTY: 0
 }
+
+export const USER = {
+    FIRST_NAME: process.env.USER_FIRST_NAME,
+    LAST_NAME: process.env.USER_LAST_NAME,
+    ZIP_CODE: process.env.USER_ZIP_CODE,
+}

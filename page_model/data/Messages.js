@@ -15,4 +15,5 @@ export const SCENARIO = {
     ADD_ITEM_TO_CART: '5. Add a single item to the shopping cart',
     ADD_MULTIPLE_ITEMS_TO_CART: '6. Add multiple items to the shopping cart',
     MISSING_INFORMATION: '7. Continue with missing information',
+    FILL_USER_INFORMATION: '8. Fill users information',
 }
