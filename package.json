@@ -6,7 +6,7 @@
   "scripts": {
     "test-all-chrome": "testcafe chrome ./page_model/tests",
     "test-check-browsers": "testcafe --list-browsers",
-    "test-all-": "testcafe chrome ./page_model/tests"
+    "test-all-browsers": "testcafe chrome ./page_model/tests"
   },
   "repository": {
     "type": "git",
