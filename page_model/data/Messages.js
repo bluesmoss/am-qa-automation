@@ -19,4 +19,8 @@ export const SCENARIO = {
     FILL_USER_INFORMATION: '8. Fill users information',
     FINAL_ORDER: '9. Final order items',
     COMPLETE_PURCHASE: '10. Complete purchase',
+    BONUS: {
+        ROLE_STANDARD: '1.1 Login with a valid user using regularUser role',
+        ROLE_PERFORMANCE_GLITCH: '1.2 Login with a valid user using performanceGlitchUser role',
+    }
 }

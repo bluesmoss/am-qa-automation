@@ -14,6 +14,10 @@ export const CREDENTIALS = {
     INVALID_USER: {
         USERNAME: 'invalid_username',
         PASSWORD: 'invalid_password'
+    },
+    PERFORMANCE_GLITCH_USER: {
+        USERNAME: process.env.PERFORMANCE_GLITCH_USERNAME,
+        PASSWORD: process.env.VALID_PASSWORD
     }
 }
 
