@@ -16,7 +16,7 @@ export const CREDENTIALS = {
         PASSWORD: 'invalid_password'
     },
     PERFORMANCE_GLITCH_USER: {
-        USERNAME: process.env.PERFORMANCE_GLITCH_USERNAME,
+        USERNAME: process.env.VALID_PERFORMANCE_GLITCH_USERNAME,
         PASSWORD: process.env.VALID_PASSWORD
     }
 }
