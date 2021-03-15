@@ -20,7 +20,7 @@ class HeaderPage {
         const currentTotal = await this.shoppingBadge.innerText;
         await t
             .expect(this.shoppingBadge.exists).ok()
-            .expect(Number(currentTotal)).gte(PRODUCT.EMPTY)
+            .expect(Number(currentTotal)).gt(PRODUCT.EMPTY)
     }
 }
 
