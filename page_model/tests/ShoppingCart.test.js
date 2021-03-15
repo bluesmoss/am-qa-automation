@@ -1,7 +1,8 @@
 import LoginPage from '../pages/LoginPage'
 import HeaderPage from '../pages/HeaderPage'
 import ShoppingCartPage from '../pages/ShoppingCartPage'
-import { CREDENTIALS, SITE }  from '../data/Constants'
+import ProductsPage from '../pages/ProductsPage'
+import { CREDENTIALS, SITE, PRODUCT }  from '../data/Constants'
 import { SCENARIO, FEATURE }  from '../data/Messages'
 
 fixture(FEATURE.SHOPPING_CART)
@@ -14,4 +15,9 @@ test(SCENARIO.NAVIGATE_SHOPPING_CART, async t => {
     await t
         .click(HeaderPage.btnCart)
         ShoppingCartPage.verifyLocation();
+})
+
+test(SCENARIO.ADD_ITEM_TO_CART, async t => {
+    await ProductsPage.addItem();
+    await HeaderPage.validateAddedItem(PRODUCT.SINGLE_ITEM);
 })

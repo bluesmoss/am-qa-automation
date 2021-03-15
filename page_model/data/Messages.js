@@ -11,6 +11,7 @@ export const SCENARIO = {
     LOGIN_INVALID: '2. Login with an invalid user',
     LOGOUT_VALID: '3. Logout from products page',
     NAVIGATE_SHOPPING_CART: '4. Navigate to shopping cart',
+    ADD_ITEM_TO_CART: '5. Add a single item to the shopping cart',
 }
 
 export const ERROR = {
