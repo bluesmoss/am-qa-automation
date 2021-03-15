@@ -23,6 +23,7 @@ class ProductsPage {
         for (let itemsCounter = PRODUCT.EMPTY; itemsCounter < totalItems; itemsCounter++) {
             await this.addItem();
         }
+        await HeaderPage.verifyCartNotEmpty();
         await HeaderPage.validateAddedItem(totalItems);
     }
 }

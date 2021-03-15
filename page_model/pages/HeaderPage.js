@@ -1,4 +1,5 @@
 import { Selector, t} from 'testcafe'
+import { PRODUCT }  from '../data/Constants'
 
 class HeaderPage {
     constructor(){
@@ -13,6 +14,13 @@ class HeaderPage {
         await t
             .expect(this.shoppingBadge.exists).ok()
             .expect(Number(currentTotal)).eql(totalItems)
+    }
+
+    async verifyCartNotEmpty() {
+        const currentTotal = await this.shoppingBadge.innerText;
+        await t
+            .expect(this.shoppingBadge.exists).ok()
+            .expect(Number(currentTotal)).gte(PRODUCT.EMPTY)
     }
 }
 
