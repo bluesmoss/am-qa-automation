@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test-all-chrome": "testcafe chrome ./page_model/tests",
-    "test-check-browsers": "testcafe ---list-browsers"
+    "test-check-browsers": "testcafe --list-browsers",
+    "test-all-": "testcafe chrome ./page_model/tests"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/bluesmoss/am-qa-automation#readme",
   "dependencies": {
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "testcafe-reporter-list": "^2.1.0"
   }
 }
