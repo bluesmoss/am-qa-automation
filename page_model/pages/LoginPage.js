@@ -10,10 +10,22 @@ class LoginPage {
 
     async submitLoginForm(username, password) {
         await t
-        .typeText(this.userNameField, username)
-        .typeText(this.passwordField, password)
-        .click(this.loginButton)
+            .typeText(this.userNameField, username)
+            .typeText(this.passwordField, password)
+            .click(this.loginButton)
+    }
 
+    async verifyLocation() {
+        await t
+            .expect(this.userNameField.exists).ok()
+            .expect(this.passwordField.exists).ok()
+            .expect(this.loginButton.exists).ok()
+    }
+    
+    async verifyErrorMessage(error) {
+        await t
+            .expect(this.errorMessage.exists).ok()
+            .expect(this.errorMessage.innerText).eql(error)
     }
 }
 
