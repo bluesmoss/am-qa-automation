@@ -18,4 +18,5 @@ export const SCENARIO = {
     MISSING_INFORMATION: '7. Continue with missing information',
     FILL_USER_INFORMATION: '8. Fill users information',
     FINAL_ORDER: '9. Final order items',
+    COMPLETE_PURCHASE: '10. Complete purchase',
 }

@@ -5,6 +5,7 @@ import ProductsPage from '../pages/ProductsPage'
 import ShoppingCartPage from '../pages/ShoppingCartPage'
 import InformationPage from '../pages/InformationPage'
 import SummaryPage from '../pages/SummaryPage'
+import CheckoutCompletePage from '../pages/CheckoutCompletePage'
 import { CREDENTIALS, SITE, PRODUCT, USER}  from '../data/Constants'
 import { SCENARIO, FEATURE }  from '../data/Messages'
 
@@ -50,4 +51,24 @@ fixture(FEATURE.SUMMARY)
         const itemsInFinalOrder = await getItems();
         await t
             .expect(itemsAddedToCart).eql(itemsInFinalOrder)
+    })
+
+    test(SCENARIO.COMPLETE_PURCHASE, async t => {
+        await ProductsPage.addItemsToCart(PRODUCT.TOTAL_MULTIPLE_ITEMS);
+        await t
+            .click(HeaderPage.btnCart)
+        const itemsAddedToCart = await getItems();
+        await t
+            .expect(ShoppingCartPage.btnCheckout.exists).ok()
+            .click(ShoppingCartPage.btnCheckout)
+        await InformationPage.fillUserInformation(USER.FIRST_NAME, USER.LAST_NAME, USER.ZIP_CODE);
+        await t
+            .expect(InformationPage.errorMessage.exists).notOk()
+            .expect(SummaryPage.container.exists).ok()
+            .expect(SummaryPage.btnFinish.exists).ok()
+        const itemsInFinalOrder = await getItems();
+        await t
+            .expect(itemsAddedToCart).eql(itemsInFinalOrder)
+            .click(SummaryPage.btnFinish)
+        await CheckoutCompletePage.verifyPurchaseCompleted()
     })
