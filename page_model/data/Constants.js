@@ -8,8 +8,8 @@ export const SITE = {
 
 export const CREDENTIALS = {
     VALID_USER: {
-        USERNAME: process.env.VALID_USERNAME,
-        PASSWORD: process.env.VALID_PASSWORD,
+        USERNAME: process.env.VALID_STANDARD_USERNAME,
+        PASSWORD: process.env.VALID_STANDARD_PASSWORD,
     },
     INVALID_USER: {
         USERNAME: 'invalid_username',
@@ -17,7 +17,7 @@ export const CREDENTIALS = {
     },
     PERFORMANCE_GLITCH_USER: {
         USERNAME: process.env.VALID_PERFORMANCE_GLITCH_USERNAME,
-        PASSWORD: process.env.VALID_PASSWORD
+        PASSWORD: process.env.VALID_PERFORMANCE_GLITCH_PASSWORD
     }
 }
 
