@@ -16,3 +16,7 @@ export const CREDENTIALS = {
         PASSWORD: 'invalid_password'
     }
 }
+
+export const PRODUCT = {
+    SINGLE_ITEM: 1,
+}
