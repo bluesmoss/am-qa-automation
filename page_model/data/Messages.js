@@ -5,6 +5,7 @@ export const FEATURE = {
     LOGIN:  `${process.env.SITE_NAME}: Login feature testing`,
     SHOPPING_CART:  `${process.env.SITE_NAME}: Shopping cart feature testing`,
     INFORMATION:  `${process.env.SITE_NAME}: Information feature testing`,
+    SUMMARY:  `${process.env.SITE_NAME}: Summary feature testing`,
 }
 
 export const SCENARIO = {
@@ -16,4 +17,5 @@ export const SCENARIO = {
     ADD_MULTIPLE_ITEMS_TO_CART: '6. Add multiple items to the shopping cart',
     MISSING_INFORMATION: '7. Continue with missing information',
     FILL_USER_INFORMATION: '8. Fill users information',
+    FINAL_ORDER: '9. Final order items',
 }
