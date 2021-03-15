@@ -1,5 +1,6 @@
 import { Selector, t } from 'testcafe'
 import  HeaderPage  from './HeaderPage'
+import { PRODUCT }  from '../data/Constants'
 
 class ProductsPage {
     constructor(){
@@ -16,6 +17,13 @@ class ProductsPage {
     async addItem() {
         await t
             .click(this.btnAddToCart)
+    }
+
+    async addItemsToCart(totalItems) {
+        for (let itemsCounter = PRODUCT.EMPTY; itemsCounter < totalItems; itemsCounter++) {
+            await this.addItem();
+        }
+        await HeaderPage.validateAddedItem(totalItems);
     }
 }
 

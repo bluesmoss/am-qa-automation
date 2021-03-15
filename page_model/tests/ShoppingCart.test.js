@@ -18,6 +18,9 @@ test(SCENARIO.NAVIGATE_SHOPPING_CART, async t => {
 })
 
 test(SCENARIO.ADD_ITEM_TO_CART, async t => {
-    await ProductsPage.addItem();
-    await HeaderPage.validateAddedItem(PRODUCT.SINGLE_ITEM);
+    await ProductsPage.addItemsToCart(PRODUCT.SINGLE_ITEM);
+})
+
+test(SCENARIO.ADD_MULTIPLE_ITEMS_TO_CART, async t => {
+    await ProductsPage.addItemsToCart(PRODUCT.TOTAL_MULTIPLE_ITEMS);
 })

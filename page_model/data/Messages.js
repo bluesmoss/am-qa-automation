@@ -12,6 +12,7 @@ export const SCENARIO = {
     LOGOUT_VALID: '3. Logout from products page',
     NAVIGATE_SHOPPING_CART: '4. Navigate to shopping cart',
     ADD_ITEM_TO_CART: '5. Add a single item to the shopping cart',
+    ADD_MULTIPLE_ITEMS_TO_CART: '6. Add multiple items to the shopping cart',
 }
 
 export const ERROR = {

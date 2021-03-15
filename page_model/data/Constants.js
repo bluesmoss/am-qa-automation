@@ -19,4 +19,6 @@ export const CREDENTIALS = {
 
 export const PRODUCT = {
     SINGLE_ITEM: 1,
+    TOTAL_MULTIPLE_ITEMS: 6,
+    EMPTY: 0
 }
