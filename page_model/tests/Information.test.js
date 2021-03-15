@@ -19,6 +19,7 @@ test(SCENARIO.MISSING_INFORMATION, async t => {
 test(SCENARIO.FILL_USER_INFORMATION, async t => {
     await InformationPage.fillUserInformation(USER.FIRST_NAME, USER.LAST_NAME, USER.ZIP_CODE);
     await t
+        .expect(InformationPage.errorMessage.exists).notOk()
         .expect(SummaryPage.container.exists).ok()
         .expect(SummaryPage.btnFinish.exists).ok()
 })
