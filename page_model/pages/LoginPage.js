@@ -22,10 +22,9 @@ class LoginPage {
             .expect(this.loginButton.exists).ok()
     }
     
-    async verifyErrorMessage(error) {
+    async verifyErrorMessage() {
         await t
             .expect(this.errorMessage.exists).ok()
-            .expect(this.errorMessage.innerText).eql(error)
     }
 }
 

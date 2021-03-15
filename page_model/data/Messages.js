@@ -16,7 +16,3 @@ export const SCENARIO = {
     ADD_MULTIPLE_ITEMS_TO_CART: '6. Add multiple items to the shopping cart',
     MISSING_INFORMATION: '7. Continue with missing information',
 }
-
-export const ERROR = {
-    INVALID_CREDENTIALS: 'Epic sadface: Username and password do not match any user in this service',
-}
