@@ -5,6 +5,7 @@ class ShoppingCartPage {
     constructor(){
         this.container = Selector('.cart_contents_container');
         this.cartList = Selector('.cart_list');
+        this.btnCheckout = Selector('.btn_action.checkout_button');
     }
 
     async verifyLocation() {
